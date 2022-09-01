@@ -1,7 +1,25 @@
 function isPalindrome(word) {
   // Write your algorithm here
+
+  // convert string to an array
+  const arrayValues = word.split("");
+
+  // do a reverse on the array values
+  const reverseArrayValues = arrayValues.reverse();
+
+  // converts array to a string
+  const reverseString = reverseArrayValues.join("");
+
+  if (word == reverseString) {
+    console.log("It is a palindrome");
+    return true;
+  } else {
+    console.log("It is not a palindrome");
+    return false;
+  }
 }
 
+isPalindrome("robot");
 /* 
   Add your pseudocode here
 */
